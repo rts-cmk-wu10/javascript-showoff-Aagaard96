@@ -3,3 +3,113 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: white;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.searchField {
+	margin-top: 2em;
+	text-align: center;
+}
+
+.searchField__form {
+	margin: 0 auto;
+	color: black;
+	width: 600px;
+	padding: 3em;
+	background-color: rgb(255, 255, 255);
+	box-shadow: 10px 10px;
+	border-radius: 25px;
+	display: flex;
+	flex-direction: column;
+}
+
+.searchField__header {
+	margin-bottom: 0.5em;
+	font-size: 2em;
+}
+
+.searchField__input {
+	padding: 0.5em;
+}
+
+.searchField__button {
+	margin: 0.5em auto;
+	background-color: rgb(0, 0, 0);
+	width: 200px;
+	padding: 0.5em;
+	color: white;
+	cursor: pointer;
+}
+
+li {
+	display: grid;
+	padding: 1em;
+	border-radius: 25px;
+	border: solid white 3px;
+	box-shadow: 5px 5px;
+}
+
+li:hover {
+	scale: 1.1;
+	background-color: rgb(92, 209, 236);
+	color: black;
+
+}
+
+.foodFinder__heading {
+	font-size: 2.5em;
+	margin: 2em 0 1em;
+	text-align: center;
+}
+
+.food__title {
+	padding-bottom: 0.5em;
+	text-align: center;
+	grid-column: span 2;
+}
+
+.cook__time {
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.food__type {
+	grid-column: 1;
+	grid-row: 3;
+}
+
+
+.foodResults {
+	padding: 0 10%;
+	text-align: center;
+	list-style: none;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 1em;
+}
+
+.picture {
+	display: flex;
+	justify-content: center;
+}
+
+.newsletter {
+	padding: 1em;
+	margin: 2em auto;
+	color: black;
+	width: 500px;
+	display: none;
+	text-align: center;
+	background-color: white;
+	border-radius: 25px;
+	box-shadow: 10px 10px;
+}
+
+.newsletter__button {
+	text-decoration: none;
+}

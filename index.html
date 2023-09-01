@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Andy's Food Suggester</title>
 	<link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
-	
+	<main>
+
+		<header class="searchField">
+			<form class="searchField__form">
+				<h1 class="searchField__header">Find your next meal here!</h1>
+				<label class="searchField__label" for=""><input placeholder="Curry, Sushi, Tacos.."
+						class="searchField__input" type="search" name="search">
+				</label>
+				<button class="searchField__button" type="submit">I'm hungry!</button>
+			</form>
+		</header>
+
+		<div class="newsletter">
+			<h3>HEY!</h3>
+			<p>Sign up for our newsletter and receive our newest recipes!</p>
+			<form class="newsletter__form">
+				<label for="">Your e-mail:
+					<input class="newsletter__input" type="email" name="email" id="email">
+				</label>
+				<a class="newsletter__button" href="tak.html">Sign up</a>
+			</form>
+		</div>
+
+		<section class="foodFinder">
+			<h2 class="foodFinder__heading">Dinner suggestions:</h2>
+			<ul class="foodResults"></ul>
+		</section>
+
+	</main>
+
 	<script src="/app.js" defer></script>
+
 </body>
+
 </html>
